@@ -28,6 +28,12 @@ public class SecondTest {
     public void testEnteredValueDisplay(){
         onView(withId(R.id.add_name_text_input)).perform(click());
         onView(withId(R.id.add_name_text_input)).perform(replaceText("First"), closeSoftKeyboard());
+        onView(withId(R.id.whipped_cream_checkbox)).perform(click());
+        onView(withId(R.id.chocolate_checkbox)).perform(click());
+        onView(withId(R.id.increase_quantity_button)).perform(click());
+        onView(withId(R.id.price_count_text_view)).perform(click());
+
+
 
         try {
             Thread.sleep(3000);
